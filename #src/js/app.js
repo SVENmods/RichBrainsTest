@@ -52,3 +52,12 @@ document.querySelectorAll(".add-btn").forEach(el=>{
           el.classList.toggle("add-btn-active")
      })
 })
+
+
+document.querySelectorAll(".more-icon").forEach(el=>{
+     let degree = 0
+     el.addEventListener('click', ()=>{
+          degree += 360
+          el.style.webkitTransform = `rotate(-${degree}deg)`
+     })
+})
