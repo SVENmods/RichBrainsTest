@@ -20,7 +20,6 @@ document.querySelectorAll(".info-card").forEach(el=> {
      }, )
      
      tween.to(bar, {
-          // bar.parentElement.offsetHeight + "px"
      height: "6px",
      ease: 'power4.in',
      duration: .8
