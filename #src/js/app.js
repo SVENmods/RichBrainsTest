@@ -61,3 +61,29 @@ document.querySelectorAll(".more-icon").forEach(el=>{
           el.style.webkitTransform = `rotate(-${degree}deg)`
      })
 })
+
+
+let menuLink = document.getElementById("menuLink")
+let menuLinkToggle = document.getElementById("menuLinkToggle")
+if (window.innerWidth <= 620) {
+     menuLink.classList.add("collapse")
+     menuLinkToggle.innerHTML = "Choose YOUR Career"
+     menuLinkToggle.href = "#menuLink"
+} else {
+     menuLink.classList.remove("collapse")
+     menuLinkToggle.innerHTML = "Careers"
+     menuLinkToggle.href = ""
+}
+window.addEventListener("resize", function() {
+     if (window.innerWidth <= 620) {
+     menuLink.classList.add("collapse")
+     menuLinkToggle.innerHTML = "Choose YOUR Career"
+     menuLinkToggle.href = "#menuLink"
+
+     } else {
+     menuLink.classList.remove("collapse")
+     menuLinkToggle.innerHTML = "Careers"
+     menuLinkToggle.href = ""
+
+     }
+});
