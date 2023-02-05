@@ -11,6 +11,7 @@ body{
      background: $color-white-bg;
      display: flex;
      flex-direction: column;
+     min-width: $minWidth;
      // width: 100%;
      color: $color-black-main;
      @media (max-width:620px) {
@@ -168,7 +169,7 @@ body{
                flex-wrap: wrap;
                max-width: 100%;
                &__tag, &__tag-input {
-                    @include adaptiv-value("font-size", 14, 12, 1);
+                    @include adaptiv-value("font-size", 14, 13, 1);
                     font-weight: 400;
                     padding: 1rem .4375rem 1rem .8125rem;
                     background: transparent;
@@ -478,4 +479,4 @@ body{
           cursor: pointer;
           transition: all ease-in .5s;
      }
-}
+}    
