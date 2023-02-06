@@ -170,6 +170,11 @@ body {
   margin-right: 0.8125rem;
 }
 
+.menu__title .bi {
+  font-size: 0.8125rem;
+  font-weight: 900;
+}
+
 .menu hr {
   border-top: 1px solid #ECECEC;
   opacity: 1;
@@ -180,7 +185,7 @@ body {
   border: 0;
   margin: 1.5rem 0;
   max-width: 243px;
-  padding: 0 0.8125rem;
+  padding: 0 0.8125rem 0 0.8125rem;
 }
 
 .menu .accordion-item .accordion-button {
