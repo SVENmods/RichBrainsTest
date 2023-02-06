@@ -107,6 +107,7 @@ body {
           flex-direction: column;
   min-width: 320px;
   color: #3E3E3E;
+  padding: 0 15px 0 15px;
 }
 
 :root {
@@ -118,7 +119,7 @@ body {
   height: 100%;
   max-width: 77rem;
   margin: auto;
-  margin-top: 60px;
+  margin-top: 45px;
   margin-bottom: 60px;
 }
 
@@ -601,7 +602,7 @@ body {
 
 @media (max-width: 892px) {
   .container-main {
-    margin-top: calc(15px + 45 * ((100vw - 320px) / 572));
+    margin-top: calc(15px + 30 * ((100vw - 320px) / 572));
   }
 
   .container-main {
@@ -637,10 +638,6 @@ body {
 }
 
 @media (max-width: 650px) {
-  .container-main {
-    padding: 0 15px 0 15px;
-  }
-
   .page {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
