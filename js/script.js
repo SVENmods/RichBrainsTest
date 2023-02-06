@@ -81,9 +81,10 @@ document.querySelectorAll(".more-icon").forEach(el=>{
 
 let menuLink = document.getElementById("menuLink")
 let menuLinkToggle = document.getElementById("menuLinkToggle")
+let linkContent = new DOMParser().parseFromString("Choose YOUR Career &lt;i class=&quot;bi bi-chevron-right&quot;&gt;&lt;/i&gt;", "text/html").documentElement.textContent
 if (window.innerWidth <= 620) {
      menuLink.classList.add("collapse")
-     menuLinkToggle.innerHTML = new DOMParser().parseFromString("Choose YOUR Career &lt;i class=&quot;bi bi-chevron-right&quot;&gt;&lt;/i&gt;", "text/html").documentElement.textContent
+     menuLinkToggle.innerHTML = linkContent
      menuLinkToggle.href = "#menuLink"
 } else {
      menuLink.classList.remove("collapse")
@@ -93,7 +94,7 @@ if (window.innerWidth <= 620) {
 window.addEventListener("resize", function() {
      if (window.innerWidth <= 620) {
      menuLink.classList.add("collapse")
-     menuLinkToggle.innerHTML = new DOMParser().parseFromString("Choose YOUR Career &lt;i class=&quot;bi bi-chevron-right&quot;&gt;&lt;/i&gt;", "text/html").documentElement.textContent
+     menuLinkToggle.innerHTML = linkContent
      menuLinkToggle.href = "#menuLink"
 
      } else {
